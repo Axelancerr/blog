@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Page config -->
+    <title>Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Protecting and Guarding the Rainbow Bridge.">
+    <meta name="keywords" content="">
+    <meta name="author" content="Axelancerr">
+    <!-- Tags -->
+    <meta property="og:url" content="https://heimdall.gg/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Heimdall: A moderation bot">
+    <meta property="og:image" content="{{ static('resources/logo128x128.png') }}">
+    <meta property="og:image:alt" content="The queer network logo">
+    <meta property="og:description" content="Protecting and Guarding the Rainbow Bridge.">
+    <meta property="og:locale" content="en_GB"/>
+    <meta property="article:author" content="Axelancerr">
+    <meta name="twitter:site" content="https://heimdall.gg/">
+    <meta name="twitter:creator" content="@Axelancerr">
+    <meta name="twitter:url" content="https://heimdall.gg/">
+    <meta name="twitter:title" content="Heimdall: A moderation bot">
+    <meta name="twitter:description" content="Protecting and Guarding the Rainbow Bridge.">
+    <meta name="twitter:image" content="{{ static('resources/logo128x128.png') }}">
+    <meta name="twitter:image:alt" content="The queer network logo">
+    <!-- Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- JS and CSS -->
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+
+        <a class="navbar-brand bebas-font me-2" href="/" style="font-family: 'Bebas Neue', cursive; font-size: 1.5rem">
+          <img class="d-inline-block align-text-top me-1" src="<%= Routes.static_path(@conn, "/images/logo32x32.png") %>" alt="Heimdall">
+          <text class="me-3">Heimdall.gg</text>
+          |
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavBar" aria-controls="NavBar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse fw-bolder" id="NavBar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link link-light underline active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light underline active" href="/features">Features</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-light fw-bold" type="button">Login</button>
+          </form>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <%= @inner_content %>
+
+      <footer class="pt-4 my-3 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="<%= Routes.static_path(@conn, "/images/logo32x32.png") %>" alt="The Queer Network">
+            <p class="mb-3 text-lighter-white">© 2021-2025</p>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="text-light">Links</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-light text-decoration-none text-lighter-white" href="#">Link</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="text-light">Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-light text-decoration-none text-lighter-white" href="#">Resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="text-light">About</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-light text-decoration-none text-lighter-white" href="#">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </body>
+
+</html>

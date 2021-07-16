@@ -1,0 +1,16 @@
+
+<div class="container p-5 rounded-3 text-center">
+
+    <div class="row text-light">
+        <div class="col-12">
+            <h1 class="bebas-font mb-4" style="font-family: 'Bebas Neue', cursive; font-size: 5rem">Heimdall</h1>
+        </div>
+        <div class="col-12">
+            <a class="btn btn-lg btn-light fw-bold mb-4 primary" role="button" href="https://discord.com/oauth2/authorize?client_id=794421230589575168&scope=bot&permissions=66321471">Invite bot</a>
+        </div>
+        <div class="col-12">
+            <img class="img-fluid" src="<%= Routes.static_path(@conn, "/images/logo512x512.png") %>" alt="The Queer Network">
+        </div>
+    </div>
+
+</div>

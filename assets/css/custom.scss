@@ -1,0 +1,29 @@
+
+:root{
+  --light-black:   #1A1A1D;
+  --lighter-black: #29292E;
+  --grey:          #4E4E50;
+  --red:           #C3073F;
+  --red-pink:      #950740;
+  --maroon:        #6F2232;
+  --purple:        #9469FA;
+
+  --black:         #000000;
+  --white:         #FFFFFF;
+  --ligher-white:  #C2C2C2;
+
+  --main:          #29376B;
+}
+
+
+body {
+  background: var(--main)
+}
+
+.text-lighter-white {
+  color: var(--ligher-white)
+}
+
+.btn:hover {
+  filter: brightness(80%);
+}
