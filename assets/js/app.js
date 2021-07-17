@@ -4,6 +4,7 @@ import "../css/app.scss"
 import "../css/custom.scss"
 
 
+// Import phoenix stuff
 import "phoenix_html"
 
 

@@ -15,13 +15,8 @@ defmodule BlogWeb.Router do
 
   scope "/", BlogWeb do
     pipe_through :browser
-    get "/", IndexController, :index
-  end
 
-  import Phoenix.LiveDashboard.Router
-  scope "/" do
-    pipe_through :browser
-    live_dashboard "/dashboard", metrics: BlogWeb.Telemetry
+    get "/", IndexController, :show
   end
 
 end
