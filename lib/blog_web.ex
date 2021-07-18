@@ -15,10 +15,13 @@ defmodule BlogWeb do
         root: "lib/blog_web/templates",
         namespace: BlogWeb
 
-      import Phoenix.Controller,
-        only: [get_flash: 1, get_flash: 2, view_module: 1, view_template: 1]
+      import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1, view_template: 1]
 
-      unquote(view_helpers())
+      use Phoenix.HTML
+
+      import BlogWeb.ErrorHelpers
+      alias BlogWeb.Router.Helpers, as: Routes
+
     end
   end
 
@@ -34,17 +37,6 @@ defmodule BlogWeb do
   def channel do
     quote do
       use Phoenix.Channel
-    end
-  end
-
-  defp view_helpers do
-    quote do
-      use Phoenix.HTML
-
-      import Phoenix.View
-      import BlogWeb.ErrorHelpers
-
-      alias BlogWeb.Router.Helpers, as: Routes
     end
   end
 
