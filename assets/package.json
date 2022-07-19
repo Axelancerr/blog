@@ -30,6 +30,6 @@
     "webpack-cli": "^3.3.2",
     "@popperjs/core": "^2.9.2",
     "trim-newlines": ">=3.0.1",
-    "glob-parent": ">=5.1.2"
+    "glob-parent": ">=6.0.1"
   }
 }
